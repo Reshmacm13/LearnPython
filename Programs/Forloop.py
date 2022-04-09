@@ -177,3 +177,69 @@
 #     else:
 #         d[s[i]].append(i)
 # print(d)
+
+# ************************* create dictionary with characters and its ASCII value in given string *****************
+# c = "Namaste"
+# d = {}
+# for i in c:
+#     d[i] = ord(i)
+# print(d)
+
+# ************************ create a directory with value of integer with dictionary **************
+# d = {"a": 1, "b": "hello", "c": 85, "d": 12.5, "e": [1, 2, 3]}
+# res = {}
+# for i in d:
+#     if isinstance(d[i], int):
+#         res[i] = d[i]
+# print(res)
+
+# ************************ create dictionary if value is of string datatype reverse and store **********
+# d = {"a": 1, "b": "hello", "c": 85, "d": 12.5, "e": [1, 2, 3]}
+import itertools
+
+res = {}
+# for k, v in d.items():
+#     if isinstance(v, str):
+#         res[k] = v[::-1]
+#     else:
+#         res[k] = v
+# print(res)
+
+# # *********************** create dictionary with length and word pair **************************
+# s = "hi how are you doing today test"
+# d = {}
+# words = s.split()
+# for word in words:
+#     d[word] = len(word)
+# print(d)
+
+# defaultdict
+
+# ***********************  create dictionary with index and word pair *******************
+# s = "hi how are you doing today test"
+# d = {}
+# words = s.split()
+# for index, item in enumerate(words):
+#     d[index] = item
+# print(d)
+
+# defaultdict
+
+# ********************** create dictionary elements of l1 will be key and l2 will be the value *************
+# l1 = ["hi", "hello"]
+# l2 = [10, 50]
+# d = {}
+# for item1, item2 in zip(l1,l2):
+#     d[item1] = item2
+# print(d)
+
+# ********************** create dictionary elements of l1 will be key and l2 will be the value *************
+
+# **************** Error
+# l1 = ["hi", "hello", "hel"]
+# l2 = [10, 50]
+# d = itertools
+# for item1, item2 in itertools.zip_longest(l1, l2):
+#     d[item1]: item2
+# print(d)
+
